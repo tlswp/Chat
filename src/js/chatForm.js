@@ -7,7 +7,7 @@ const messageState = store({
 });
 import state from './store.js';
 import io from 'socket.io-client';
-const socket = io('http://localhost:3000');
+const socket = io('http://localhost:8080');
 socket.on('connect', (data) => {
   socket.emit('get_id', (data) => {
     state.id = data;

@@ -3,7 +3,7 @@ const fs = require('fs');
 const app = express();
 
 app.use(express.static('public'));
-server = app.listen('3000', () => console.log('Server is running...'));
+server = app.listen('8080', () => console.log('Server is running...'));
 
 const io = require('socket.io')(server);
 var id = 0;

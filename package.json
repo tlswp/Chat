@@ -27,7 +27,6 @@
     "jshint": "jshint src/",
     "watch": "npm-watch",
     "dev-mode": "npm-run-all --parallel server watch",
-    "postinstall": "npm i -g live-server html-validate jshint",
     "run-webpack": "webpack --mode production",
     "build": "npm-run-all validate-html stylelint run-webpack",
     "start-express": "nodemon app.js"
